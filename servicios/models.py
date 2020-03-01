@@ -19,7 +19,7 @@ class Cliente(models.Model):
     pass_field = models.CharField(db_column='pass', max_length=128, blank=True, null=True)  # Field renamed because it was a Python reserved word.
 
     class Meta:
-        managed = True
+        managed = False
         db_table = 'cliente'
 
     def __str__(self):
